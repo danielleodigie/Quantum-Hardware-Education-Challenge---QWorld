@@ -9,7 +9,9 @@
 
 <style>
     #footer{
-        margin-top: auto;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
         text-align:center;
         margin: auto;
         font-family: "Goldleaf";

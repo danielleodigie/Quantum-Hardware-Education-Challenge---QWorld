@@ -2,7 +2,7 @@
     <div id="nav">
         <NuxtLink to="/" id="home">QNYC</NuxtLink>
         <ul id="otherlinks">
-            <NuxtLink to="#">About</NuxtLink>
+            <NuxtLink to="/about">About</NuxtLink>
             <NuxtLink to="#">Learn</NuxtLink>
         </ul>
     </div>
