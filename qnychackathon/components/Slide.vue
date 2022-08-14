@@ -13,7 +13,7 @@
   padding: 20px;
   height: 400px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   text-align: center;
   align-items: center;
   justify-content: center;

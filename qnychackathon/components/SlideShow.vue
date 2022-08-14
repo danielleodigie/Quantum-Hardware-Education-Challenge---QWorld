@@ -1,12 +1,12 @@
 <template>
     <div class="slideshow">
-        <a id="prev" @click="prev" href="#">&#10094;</a>
+        <a id="prev" @click="prev">&#10094;</a>
         <slide
         :title="currentSl.title"
         :style="currentSl.style"
         :subtitle="currentSl.subtitle"
         />
-        <a id="next" @click="next" href="#">&#10095;</a>
+        <a id="next" @click="next">&#10095;</a>
     </div>
 </template>
 
@@ -42,7 +42,6 @@
 </style>
 
 <script>
-import { ref, el } from 'vue';
 import Slide from './Slide.vue';
 export default{
     name: 'slideshow',
@@ -72,7 +71,7 @@ export default{
         }
     },
     mounted() {
-        setInterval(this.next, 4000);
+        setInterval(this.next, 6000);
     }
 
 
