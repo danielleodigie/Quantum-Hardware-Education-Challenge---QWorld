@@ -1,5 +1,5 @@
 <template>
-    <div class="infocard">
+    <div class="infocard grow">
         <img :src="imgsrc" :style="style"/>
         <div>
             <h1>{{title}}</h1>
@@ -45,6 +45,15 @@
     text-align: center;
     font-size: 20px;
 }
+
+.grow { 
+transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+transform: scale(1.02); 
+}
+
 </style>
 
 <script>

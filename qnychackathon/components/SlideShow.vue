@@ -21,7 +21,7 @@
 }
 
 #prev, #next {
-    color: none;
+    color: white;
     background-color: none;
     cursor: pointer;
     width: auto;
