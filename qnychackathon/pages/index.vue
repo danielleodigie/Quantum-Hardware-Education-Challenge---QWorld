@@ -1,11 +1,6 @@
 <template>
   <div id="main">
-    <div>
-        <div class="card">
-          <h1>Learn about super-conducting qubits!</h1>
-          <h2>And have some fun while you're doing it.</h2>
-        </div>
-    </div>
+    <slide-show-vue :slides="slides"/>
     <div class="blank">
       <h1>Lorem Ipsum</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -29,14 +24,6 @@ body{
   margin: 0px 50px;
   margin-bottom: 50px;
 }
-.card{
-  background-color: antiquewhite;
-  border-radius: 20px;
-  padding: 20px;
-  text-align: center;
-  margin: 20px 10px;
-  object-fit: cover;
-}
 
 #info{
   display: flex;
@@ -47,7 +34,8 @@ body{
 
 #info img{
   width: 50%;
-  height: 300px;
+  max-height: 500px;
+  min-height: 300px;
   object-fit: cover;
   border-radius: 20px 0px 0px 20px;
   box-shadow: inset 10px 10px 10px black;
@@ -56,6 +44,7 @@ body{
 #info div{
   margin: 0px 20px;
   text-align: left;
+  width: 100%;
 }
 #info a{
   float: right;
@@ -78,7 +67,27 @@ body{
 </style>
 
 <script>
+import SlideShowVue from '../components/SlideShow.vue';
 export default {
   name: 'IndexPage',
+  components: {
+    SlideShowVue
+  },
+  data() {
+         return {
+            slides: [{
+                    id: 1,
+                    title: "Learn about super-conducting qubits!",
+                    subtitle: "And have some fun while you're doing it.",
+                    style: "background-color: lightblue; color: white"
+                }, {
+                    id: 2,
+                    title: "Learn about super-conducting qubits!",
+                    subtitle: "And have some fun while you're doing it." 
+                }]
+            }
+    }
 }
+
+
 </script>
