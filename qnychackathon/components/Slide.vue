@@ -12,6 +12,8 @@
   border-radius: 20px;
   padding: 20px;
   height: 400px;
+  width: 100%;
+  max-width: 1000px;
   text-align: center;
   align-items: center;
   justify-content: center;

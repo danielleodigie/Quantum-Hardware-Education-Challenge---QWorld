@@ -5,7 +5,7 @@
       <h1>Lorem Ipsum</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-    <div class="card" id="info">
+    <div id="info">
       <img src="https://www.sciencealert.com/images/2019-06/processed/superconductivity_topic_1024.jpg">
       <div>
         <h2>Look at the little magnet flying omg!</h2>
@@ -22,7 +22,7 @@ body{
 }
 #main{
   margin: 0px 50px;
-  margin-bottom: 50px;
+  margin-bottom: 110px;
 }
 
 #info{
@@ -30,10 +30,17 @@ body{
   flex-direction: row;
   padding:0px;
   align-items: center;
+  justify-content: center;
+  background-color: lightseagreen;
+  border-radius: 20px;
+  width: 50%;
+  min-width: 600px;
 }
 
 #info img{
   width: 50%;
+  height: 100%;
+  background-position: fixed;
   max-height: 500px;
   min-height: 300px;
   object-fit: cover;
@@ -84,7 +91,12 @@ export default {
                     id: 2,
                     title: "Learn about super-conducting qubits!",
                     subtitle: "And have some fun while you're doing it." 
-                }]
+                }, {
+                    id: 3,
+                    title: "Learn about super-conducting qubits!",
+                    subtitle: "And have some fun while you're doing it.",
+                    style: "background-color: lightgreen; color: white"
+                },]
             }
     }
 }
