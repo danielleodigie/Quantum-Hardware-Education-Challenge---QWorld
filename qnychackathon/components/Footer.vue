@@ -11,11 +11,13 @@
     #footer{
         position: fixed;
         bottom: 0;
+        margin: 20px 0px;
         width: 100%;
         text-align:center;
         margin: auto;
         font-family: "Goldleaf";
         padding: 10px;
+        background-color: white;
     }
 
     #foot{ 
