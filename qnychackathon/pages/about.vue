@@ -8,6 +8,10 @@
 </template>
 
 <style>
+    #about{
+        padding-top: 120px;
+    }
+    
     #aboutsec{
         width: 75%;
         margin: auto;

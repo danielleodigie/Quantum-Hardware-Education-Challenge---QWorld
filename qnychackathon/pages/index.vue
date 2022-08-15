@@ -5,6 +5,7 @@
       <h1>Lorem Ipsum</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
+    <br/>
     <div id="infocards">
       <info-card v-for="infocard in infocards" v-bind:key="infocard.id" :imgsrc="infocard.imgsrc" :title="infocard.title" :subtitle="infocard.subtitle" :style="infocard.style"></info-card>
     </div>
@@ -16,6 +17,7 @@ body{
   font-family: "Goldleaf";
 }
 #main{
+  padding-top: 120px;
   margin: 0px 50px;
   margin-bottom: 110px;
 }
@@ -37,7 +39,8 @@ body{
 }
 
 .blank p{
-  font-size: 30px;
+  font-size: 25px;
+  color: gray;
 }
 
 .blank h1{
@@ -48,13 +51,11 @@ body{
 
 <script>
 import SlideShowVue from '../components/SlideShow.vue';
-import InfoCardVue from '../components/InfoCard.vue';
 import InfoCard from '../components/InfoCard.vue';
 export default {
   name: 'IndexPage',
   components: {
     SlideShowVue,
-    InfoCardVue,
     InfoCard
 },
   data() {

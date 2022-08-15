@@ -24,7 +24,11 @@
         margin: 0;
     }
     #nav{
-        padding: 20px;
+        position: fixed;
+        background-color: white;
+        z-index: 9999;
+        width: 100%;
+        padding: 0px 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -38,11 +42,15 @@
         color: #5a4230;
     }
     #otherlinks{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
         float: right;
     }
 
     #otherlinks a {
         padding-right: 80px;
+        margin: 20px;
         font-family: "Goldleaf";
         font-size: 25px;
         color: black;
