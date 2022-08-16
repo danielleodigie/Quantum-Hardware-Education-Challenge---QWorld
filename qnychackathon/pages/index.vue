@@ -38,6 +38,7 @@ body{
 
 .blank p{
   font-size: 30px;
+  font-family: "DosisLight";
 }
 
 .blank h1{

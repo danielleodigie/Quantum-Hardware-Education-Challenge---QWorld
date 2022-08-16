@@ -6,20 +6,25 @@
 </template>
 
 <style>
+@font-face{
+    font-family: "DosisLight";
+    src: url("../static/fonts/Dosis-Light.ttf")
+}
 .card{
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  padding: 20px;
-  height: 400px;
-  width: 100%;
-  max-width: 1200px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: 20px 10px;
-  background-color: antiquewhite;
-  transition: 400ms;
+    font-family: "DosisLight";
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+    height: 400px;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px;
+    background-color: antiquewhite;
+    transition: 400ms;
 }
 </style>
 

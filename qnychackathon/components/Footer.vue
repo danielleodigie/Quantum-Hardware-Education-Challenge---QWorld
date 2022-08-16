@@ -9,10 +9,9 @@
 
 <style>
     #footer{
-        position: fixed;
         bottom: 0;
+        margin-top: auto;
         margin: 20px 0px;
-        width: 100%;
         text-align:center;
         margin: auto;
         font-family: "Goldleaf";
@@ -40,6 +39,7 @@
 
     p{
         font-size: 12px;
+        font-family: "DosisLight"
         
     }
 </style>

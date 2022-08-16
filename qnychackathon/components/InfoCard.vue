@@ -9,7 +9,13 @@
 </template>
 
 <style>
+
+@font-face{
+    font-family: "Dosis";
+    src: url("../static/fonts/Dosis-Medium.ttf")
+}
 .infocard{
+    transition: 300ms;
     display: flex;
     flex-direction: row;
     padding:0px;
@@ -17,8 +23,7 @@
     justify-content: center;
     background-color: lightseagreen;
     border-radius: 20px;
-    width: 45%;
-    min-width: 600px;
+    width: 90%;
     margin: 10px
 }
 
@@ -44,6 +49,12 @@
 .infocard p{
     text-align: center;
     font-size: 20px;
+    font-family: "DosisLight";
+}
+
+.infocard:hover, .infocard:active{
+    transition: 300ms;
+    box-shadow: 0 0 20px #36291d;
 }
 </style>
 

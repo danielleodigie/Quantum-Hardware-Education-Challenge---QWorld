@@ -3,7 +3,7 @@
         <NuxtLink to="/" id="home">QNYC</NuxtLink>
         <ul id="otherlinks">
             <NuxtLink to="/about">About</NuxtLink>
-            <NuxtLink to="#">Learn</NuxtLink>
+            <NuxtLink to="/learn">Learn</NuxtLink>
         </ul>
     </div>
 </template>

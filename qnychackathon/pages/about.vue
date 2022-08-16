@@ -21,11 +21,12 @@
 
     #aboutsec p{
         font-size: 25px;
-        font-family: "Goldleaf";
+        font-family: "DosisLight";
         color: rgb(96, 96, 96);
     }
 
     #aboutsec a{
         color:#5a4230; 
+        font-weight: bold;
     }
 </style>
