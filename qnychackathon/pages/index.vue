@@ -5,6 +5,8 @@
       <h1>Lorem Ipsum</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
+    <br/>
+    <Question :question="question.question" :answers="question.answers"></Question>
     <div id="infocards">
       <info-card v-for="infocard in infocards" v-bind:key="infocard.id" :imgsrc="infocard.imgsrc" :title="infocard.title" :subtitle="infocard.subtitle" :style="infocard.style"></info-card>
     </div>
@@ -16,6 +18,7 @@ body{
   font-family: "Goldleaf";
 }
 #main{
+  padding-top: 120px;
   margin: 0px 50px;
   margin-bottom: 110px;
 }
@@ -49,14 +52,14 @@ body{
 
 <script>
 import SlideShowVue from '../components/SlideShow.vue';
-import InfoCardVue from '../components/InfoCard.vue';
 import InfoCard from '../components/InfoCard.vue';
+import Question from '../components/Question.vue';
 export default {
   name: 'IndexPage',
   components: {
     SlideShowVue,
-    InfoCardVue,
-    InfoCard
+    InfoCard,
+    Question
 },
   data() {
          return {
@@ -89,7 +92,14 @@ export default {
               subtitle: "We're goin' quantum!",
               style: "background-color: lightpink"
               },
-            ]
+            ],
+            question: {
+              question: "How are you today?",
+              answers: {
+                answers: ["I'm doing badly", "I'm doing okay", "I'm doing good", "I'm doing great!"],
+                correct: 1
+              }
+            }
             }
     }
 }

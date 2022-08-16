@@ -1,5 +1,5 @@
 <template>
-    <div id="card" class="card" :style="styles">
+    <div id="card" class="card grow" :style="styles">
         <h1>{{title}}</h1>
         <h2>{{subtitle}}</h2>
     </div>
@@ -25,6 +25,13 @@
     margin: 20px 10px;
     background-color: antiquewhite;
     transition: 400ms;
+}
+.grow { 
+transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+transform: scale(1.025); 
 }
 </style>
 
