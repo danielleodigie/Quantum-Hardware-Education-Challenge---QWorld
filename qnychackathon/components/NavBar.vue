@@ -3,7 +3,7 @@
         <NuxtLink to="/" id="home">QNYC</NuxtLink>
         <ul id="otherlinks">
             <NuxtLink to="/about">About</NuxtLink>
-            <NuxtLink to="#">Learn</NuxtLink>
+            <NuxtLink to="/learn">Learn</NuxtLink>
         </ul>
     </div>
 </template>
@@ -24,11 +24,10 @@
         margin: 0;
     }
     #nav{
-        position: fixed;
         background-color: white;
         z-index: 9999;
         width: 100%;
-        padding: 0px 20px;
+        /* padding: 0px 20px; */
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -38,7 +37,7 @@
         float: left;
         font-family: "Quartzo";
         font-size: 35px;
-        padding-left: 20px;
+        padding-left: 40px;
         color: #5a4230;
     }
     #otherlinks{

@@ -67,6 +67,7 @@
 }
 #message{
     font-size: 35px;
+    transition: 300ms;
 }
 .reveal h2{
     font-size: 30px;
