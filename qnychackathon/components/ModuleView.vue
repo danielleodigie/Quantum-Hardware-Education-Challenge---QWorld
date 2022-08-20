@@ -1,9 +1,9 @@
 <template>
     <div id="card" >
-        <a :href="link">
+        <NuxtLink :to="link">
             <h1 class="title">{{title}}</h1>
             <h2>{{subtitle}}</h2>
-        </a>
+        </NuxtLink>
     </div>
 </template>
 

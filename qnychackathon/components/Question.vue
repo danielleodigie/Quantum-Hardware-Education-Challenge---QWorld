@@ -2,7 +2,7 @@
 <div id="question">
     <h1>{{question}}</h1>
     <div id="answers" :class="{ view: end}">
-        <a class="answer" :class=" {show: !end, view: end} " v-for="(text, i) in answers.answers" @click="select(i)">{{text}}</a>
+        <a class="answer" v-if="!end" :class=" {show: !end} " v-for="(text, i) in answers.answers" @click="select(i)">{{text}}</a>
     </div>
     <div :class="{reveal: answerTab}">
         <h2 id="message" :class="{wrong: !(answerTab.correct), correct: answerTab.correct}">{{answerTab.message}}</h2>
@@ -78,12 +78,6 @@
     font-size: 25px;
     margin: 0;
     text-align: center;
-}
-
-.view{
-    cursor: default;
-    color: darkgray;
-    transition: 300ms;
 }
 
 .correct{
