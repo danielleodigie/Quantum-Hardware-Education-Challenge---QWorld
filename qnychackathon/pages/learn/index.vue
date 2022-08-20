@@ -3,15 +3,15 @@
         <h1 id="topics">Topics</h1>
         <p id="watching">Start from the beginning or jump around! It's up to you, we're not watching you!</p>
         <div id="learn">
-            <NuxtLink to="#"><InfoCard imgsrc="images/qubit.png" style="background-color: #6f5947; color: white;" title="What's a Qubit?" subtitle="the ultimate multitasker"></InfoCard></NuxtLink>
+            <NuxtLink to="#"><InfoCard imgsrc="images/qubit.png" cardstyle="background-color: #6f5947; color: white;" title="What's a Qubit?" subtitle="the ultimate multitasker"></InfoCard></NuxtLink>
 
-            <NuxtLink to="#"><InfoCard imgsrc="images/qubit.png" style="background-color: #6f5947; color: white;" title="What's a Qubit?" subtitle="the ultimate multitasker"></InfoCard></NuxtLink>
+            <NuxtLink to="#"><InfoCard imgsrc="images/qubit.png" cardstyle="background-color: #6f5947; color: white;" title="What's a Qubit?" subtitle="the ultimate multitasker"></InfoCard></NuxtLink>
 
-            <NuxtLink to="#"><InfoCard imgsrc="images/qubit.png" style="background-color: #6f5947; color: white;" title="What's a Qubit?" subtitle="the ultimate multitasker"></InfoCard></NuxtLink>
+            <NuxtLink to="#"><InfoCard imgsrc="images/qubit.png" cardstyle="background-color: #6f5947; color: white;" title="What's a Qubit?" subtitle="the ultimate multitasker"></InfoCard></NuxtLink>
 
-            <NuxtLink to="#"><InfoCard imgsrc="images/qubit.png" style="background-color: #6f5947; color: white;" title="What's a Qubit?" subtitle="the ultimate multitasker"></InfoCard></NuxtLink>
+            <NuxtLink to="#"><InfoCard imgsrc="images/qubit.png" cardstyle="background-color: #6f5947; color: white;" title="What's a Qubit?" subtitle="the ultimate multitasker"></InfoCard></NuxtLink>
 
-            <NuxtLink to="#"><InfoCard imgsrc="images/qubit.png" style="background-color: #6f5947; color: white;" title="What's a Qubit?" subtitle="the ultimate multitasker"></InfoCard></NuxtLink>
+            <NuxtLink to="#"><InfoCard imgsrc="images/qubit.png" cardstyle="background-color: #6f5947; color: white;" title="What's a Qubit?" subtitle="the ultimate multitasker"></InfoCard></NuxtLink>
         </div>
     </div>
 </template>

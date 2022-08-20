@@ -1,6 +1,6 @@
 <template>
     <div class="infocard grow">
-        <img :src="imgsrc" :style="style"/>
+        <img :src="imgsrc" :style="cardstyle"/>
         <div>
             <h1>{{title}}</h1>
             <p>{{subtitle}}</p>
@@ -72,7 +72,7 @@ export default{
     name: "InfoCard",
     props: {
         imgsrc: {required: true, type: String},
-        style: {required: false, type: String},
+        cardstyle: {required: false, type: String},
         title: {required: true, type: String},
         subtitle: {required: true, type: String}
     }

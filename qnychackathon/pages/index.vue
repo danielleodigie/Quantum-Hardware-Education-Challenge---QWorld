@@ -8,7 +8,7 @@
     <br/>
     <Question :question="question.question" :answers="question.answers"></Question>
     <div id="infocards">
-      <info-card v-for="infocard in infocards" v-bind:key="infocard.id" :imgsrc="infocard.imgsrc" :title="infocard.title" :subtitle="infocard.subtitle" :style="infocard.style"></info-card>
+      <info-card v-for="infocard in infocards" v-bind:key="infocard.id" :imgsrc="infocard.imgsrc" :title="infocard.title" :subtitle="infocard.subtitle" :cardstyle="infocard.style"></info-card>
     </div>
   </div>
 </template>
