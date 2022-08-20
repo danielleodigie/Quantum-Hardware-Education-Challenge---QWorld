@@ -18,7 +18,6 @@ body{
   font-family: "Goldleaf";
 }
 #main{
-  padding-top: 120px;
   margin: 0px 50px;
   margin-bottom: 110px;
 }
