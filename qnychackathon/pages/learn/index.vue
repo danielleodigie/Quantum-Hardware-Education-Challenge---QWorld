@@ -1,49 +1,81 @@
 <template>
-    <div id="biglearn">
-        <h1 id="topics">Topics</h1>
-        <p id="watching">Start from the beginning or jump around! It's up to you, we're not watching you!</p>
-        <div id="learn">
-            <NuxtLink to="#"><InfoCard imgsrc="images/qubit.png" cardstyle="background-color: #6f5947; color: white;" title="What's a Qubit?" subtitle="the ultimate multitasker"></InfoCard></NuxtLink>
-
-            <NuxtLink to="#"><InfoCard imgsrc="images/qubit.png" cardstyle="background-color: #6f5947; color: white;" title="What's a Qubit?" subtitle="the ultimate multitasker"></InfoCard></NuxtLink>
-
-            <NuxtLink to="#"><InfoCard imgsrc="images/qubit.png" cardstyle="background-color: #6f5947; color: white;" title="What's a Qubit?" subtitle="the ultimate multitasker"></InfoCard></NuxtLink>
-
-            <NuxtLink to="#"><InfoCard imgsrc="images/qubit.png" cardstyle="background-color: #6f5947; color: white;" title="What's a Qubit?" subtitle="the ultimate multitasker"></InfoCard></NuxtLink>
-
-            <NuxtLink to="#"><InfoCard imgsrc="images/qubit.png" cardstyle="background-color: #6f5947; color: white;" title="What's a Qubit?" subtitle="the ultimate multitasker"></InfoCard></NuxtLink>
+    <div id="learn">
+        <h1 class="intro">Let's learn about superconducting qubit</h1>
+        <div class="bodycomp">
+            <module-view 
+        v-for="module in modules" 
+        :imgsrc="module.imgsrc" 
+        :title="module.title" 
+        :textcolor="module.textcolor"
+        :subtitle="module.subtitle"
+        :link="module.link"></module-view>
         </div>
     </div>
 </template>
 
 <style>
     #learn{
-        display: grid;
-        grid-gap: 1em;
-        grid-auto-rows: auto;
-        grid-template-columns: repeat(2, 1fr);
-        margin: auto;
-        padding-left: 1em;
+        margin-bottom: 110px;
     }
 
-    #biglearn{
-        margin: auto;
+    .intro{
         text-align: center;
+        font-size: 40px;
+        margin: 10px 30px;
     }
 
-    #topics{
-        font-size: 50px;
-        padding: 0px;
-        margin: 0;
-    }
-
-    #watching{
-        font-size: 20px;
-    }
-
-    @media only screen and (max-width: 800px){
-        #learn{
-            grid-template-columns: repeat(1, 1fr);
-        }
+    .bodycomp{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-evenly;
+        align-items: center;
     }
 </style>
+
+<script>
+import ModuleView from '../../components/ModuleView.vue';
+export default {
+    name: 'Learn',
+    components: {
+        ModuleView
+    },
+    data() {
+        return {
+            modules: [
+                {
+                    imgsrc: "https://assets.rbl.ms/25591636/origin.jpg",
+                    textcolor: "white",
+                    title: "Classical and Quantum Bits",
+                    link: "/learn/#"
+                },
+                {
+                    imgsrc: "https://m.media-amazon.com/images/I/51Bg8ULPQXL._AC_SL1024_.jpg",
+                    textcolor: "white",
+                    title: "Energy Quantization",
+                    link: "/learn/#"
+                },
+                {
+                    imgsrc: "https://static.scientificamerican.com/sciam/cache/file/1BBDA1FB-CE3D-4CB4-AA351DF50EF1B036_source.jpg",
+                    textcolor: "white",
+                    title: "Superconductors",
+                    link: "/learn/#"
+                },
+                {
+                    imgsrc: "https://www.cnet.com/a/img/resize/c112746c0379c9ee5303d267c7a6ec8da7e4b9a1/2019/06/26/3f76e99d-8055-46f3-8f27-558ee276b665/20180405-ibm-q-quantum-computer-02.jpg?auto=webp&fit=crop&height=675&width=1200",
+                    textcolor: "white",
+                    title: "RC-Circuits",
+                    link: "/learn/#"
+                },
+                {
+                    imgsrc: "https://www.lpi.usra.edu/planetary_news/wp-content/uploads/2020/08/Lewitacja-meissner-1024x765.jpg",
+                    textcolor: "white",
+                    title: "Josephson Junctions",
+                    link: "/learn/#"
+                }
+            ]
+        }
+    }
+}
+</script>
