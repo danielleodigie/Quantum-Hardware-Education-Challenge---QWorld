@@ -80,6 +80,7 @@
     #modulenav ul{
         margin:auto;
         padding:15px;
+        visibility: hidden;
     }
 
     #navimg{
@@ -89,4 +90,5 @@
         padding-left: 5px;
         padding-top: 10px;
     }
+
 </style>

@@ -48,7 +48,7 @@ export default {
                     imgsrc: "https://assets.rbl.ms/25591636/origin.jpg",
                     textcolor: "white",
                     title: "Classical and Quantum Bits",
-                    link: "/learn/#"
+                    link: "/learn/lecturepage1"
                 },
                 {
                     imgsrc: "https://m.media-amazon.com/images/I/51Bg8ULPQXL._AC_SL1024_.jpg",
