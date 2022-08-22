@@ -102,17 +102,18 @@ export default {
             selected: -1,
             wrong_count: 0,
             end: false,
-            wrong_end: false,
         }
     },
     methods: {
         select: function(id){
             if (id == this.$props.answers.correct) {
                 this.selected = id;
+                localStorage.setItem(this.question, JSON.stringify({"selected" : this.selected, "end" : this.end, "wrong_count" : this.wrong_count}))
             }
             else{
                 this.wrong_count += 1;
                 this.selected = id;
+                localStorage.setItem(this.question, JSON.stringify({"selected" : this.selected, "end" : this.end, "wrong_count" : this.wrong_count}))
                 console.log(this.selected, this.wrong_count)
             }
         }
@@ -136,6 +137,15 @@ export default {
                 this.wrong_end = true;
                 return {selected: this.selected, reveal: true, message: "That was not the answer. 😞"}
             }
+        }
+    },
+    mounted() {
+        let data = JSON.parse(localStorage.getItem(this.question));
+        console.log(data);
+        if (data) {
+            this.selected = data.selected;
+            this.end = data.end;
+            this.wrong_count = data["wrong_count"];
         }
     }
     

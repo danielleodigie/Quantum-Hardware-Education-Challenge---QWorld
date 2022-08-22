@@ -31,6 +31,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
 
     }
     #home{

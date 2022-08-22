@@ -1,5 +1,5 @@
 <template>
-    <div id="card" class="card grow" :style="styles">
+    <div class="card grow">
         <h1>{{title}}</h1>
         <h2>{{subtitle}}</h2>
     </div>
@@ -17,14 +17,15 @@
     border-radius: 20px;
     padding: 20px;
     height: 400px;
-    width: 100%;
-    max-width: 1200px;
+    width: 80%;
+    /* max-width: 1200px; */
     text-align: center;
     align-items: center;
     justify-content: center;
     margin: 20px 10px;
-    background-color: antiquewhite;
+    background: v-bind(background);
     transition: 400ms;
+    color: v-bind(color);
 }
 .grow { 
 transition: all .2s ease-in-out; 
@@ -40,7 +41,8 @@ export default {
     props: {
         title: { required: true, type: String },
         subtitle: { required: false, type: String },
-        styles: {required: false, type: Object}
+        background: {required: true, type: String},
+        color: {required: true, type: String}
     }
 }
 </script>

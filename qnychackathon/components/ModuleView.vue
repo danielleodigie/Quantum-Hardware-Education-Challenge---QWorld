@@ -13,7 +13,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-attachment: fixed; */
     background-size: cover;
     background-position: center;
     background-image: v-bind(img);
