@@ -17,8 +17,8 @@
         
         data(){
             return {
-                navitems: ["Classical and Quantum Bits"],
-                navlinks: ["/learn/lecturepage1"],
+                navitems: ["Classical and Quantum Bits", "Energy Quantization", "Superconductors", "RC Circuits", "Josephson Junctions"],
+                navlinks: ["/learn/lecturepage1", "/learn/lecturepage2", "/learn/lecturepage3", "/learn/lecturepage4", "/learn/lecturepage5"],
                 is_expanded: false,
                 navimg: "../images/plus.png"
             }
