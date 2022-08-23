@@ -4,7 +4,8 @@
         <p title="Or are we?? Is this a bad superposition joke?" class="joke">Start from the beginning, or jump around, do what you want! We aren't watching you...</p>
         <div class="bodycomp">
             <module-view 
-        v-for="module in modules" 
+        v-for="(module, index) in modules"
+        v-bind:key="index" 
         :imgsrc="module.imgsrc" 
         :title="module.title" 
         :textcolor="module.textcolor"

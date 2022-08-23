@@ -2,9 +2,9 @@
   <div id="main">
     <slide-show-vue :slides="slides" />
     <div class="blank">
-      <h1>Lorem Ipsum</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h1>Promoting an Open Quantum Community</h1>
+      <p>It is our mission to spread awareness about quantum computing. We aim to introduce the field to students from all different backgrounds, age groups, and interests. The quantum decade is steadily approaching. It is important that we inspire people
+        from all walks of life to pursue a career in quantum. If you are interested in learning more about quantum computing your journey begins below.</p>
     </div>
     <br/>
     <div id="infocards">
@@ -40,7 +40,7 @@
     text-align: center;
     margin: 20px 0;
   }
-  .blank.inner{
+  .blank.inner {
     display: block;
     flex-direction: column;
     justify-content: center;
@@ -51,7 +51,7 @@
     font-size: 50px;
     position: sticky;
     top: 116px;
-    margin:0;
+    margin: 0;
     padding: 10px;
   }
   .blank p {
@@ -60,7 +60,7 @@
     top: 116px;
     /* background-color: antiquewhite; */
     padding: 20px 10%;
-    margin:0;
+    margin: 0;
     line-height: 50px;
     border-radius: 0 0 20px 20px;
   }
