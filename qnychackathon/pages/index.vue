@@ -7,7 +7,7 @@
         from all walks of life to pursue a career in quantum. If you are interested in learning more about quantum computing your journey begins below.</p>
     </div>
     <div class="video">
-      <iframe width="90%" height="720px" src="https://www.youtube.com/embed/aZaDQ5yc3fQ?color=white&autoplay=0&controls=0&disablekb=1&fs=0&modestbranding=1&rel=0&cc_load_policy=1" title="Home Page" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      <iframe width="90%" height="600px" src="https://www.youtube.com/embed/aZaDQ5yc3fQ?color=white&autoplay=0&controls=0&disablekb=1&fs=0&modestbranding=1&rel=0&cc_load_policy=1" title="Home Page" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </div>
     <br/>

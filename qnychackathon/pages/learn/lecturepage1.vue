@@ -2,6 +2,11 @@
     <div>
         <LecturePage title="Classical and Quantum Bits" :elements="elements">
         </LecturePage>
+        <div class="video">
+            <p style="font-size:30px">Here's a little video to sum things up!</p>
+      <iframe width="70%" height="450px" src="https://www.youtube.com/embed/CskYZrkkWMs?color=white&autoplay=0&controls=0&disablekb=1&fs=0&modestbranding=1&rel=0&cc_load_policy=1" title="Classical vs Quantum" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
     </div>
 </template>
 
