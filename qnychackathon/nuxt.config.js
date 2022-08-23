@@ -33,6 +33,14 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    ['@nuxtjs/redirect-module', {
+      from: '(?!^\/$|^\/[?].*$)(.*\/[?](.*)$|.*\/$)',
+  to: (from, req) => {
+    const base = req._parsedUrl.pathname.replace(/\/$/, '');
+    const search = req._parsedUrl.search;
+    return base + (search != null ? search : '');
+  }
+    }]
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
