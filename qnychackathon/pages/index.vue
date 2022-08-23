@@ -5,6 +5,8 @@
       <h1>Promoting an Open Quantum Community</h1>
       <p>It is our mission to spread awareness about quantum computing. We aim to introduce the field to students from all different backgrounds, age groups, and interests. The quantum decade is steadily approaching. It is important that we inspire people
         from all walks of life to pursue a career in quantum. If you are interested in learning more about quantum computing your journey begins below.</p>
+      <iframe width="100%" height="720px" src="https://www.youtube.com/embed/aZaDQ5yc3fQ?color=white&autoplay=1&controls=0&disablekb=1&fs=0&modestbranding=1&rel=0&cc_load_policy=1" title="Home Page" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
     </div>
     <br/>
     <div id="infocards">
@@ -53,6 +55,11 @@
     top: 116px;
     margin: 0;
     padding: 10px;
+  }
+  .blank iframe {
+    position: sticky;
+    top: 116px;
+    border-radius: 0 0 20px 20px;
   }
   .blank p {
     font-size: 30px;

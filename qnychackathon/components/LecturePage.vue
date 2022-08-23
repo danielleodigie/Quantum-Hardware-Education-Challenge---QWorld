@@ -1,6 +1,6 @@
 <template>
     <div id="lecturepage1">
-        <ModuleNav></ModuleNav>
+        <ModuleNav class="nav"></ModuleNav>
         <div id="lecturetext">
             <h1>{{title}}</h1>
             <img :src="imgsrc" :alt="imgalt">
@@ -10,30 +10,30 @@
 </template>
 
 <script>
-
     export default {
-    props: {
-        title: String,
-        text: Array,
-        imgsrc: String,
-        imgalt: String,
-    },
-}
-
+        props: {
+            title: String,
+            text: Array,
+            imgsrc: String,
+            imgalt: String,
+        },
+    }
 </script>
 
 <style>
-    #lecturetext{
+    #lecturetext {
         width: 70%;
         margin: auto;
         text-align: center;
     }
-
-    #lecturetext img{
+    #lecturetext img {
         height: 200px;
     }
-
-    #lecturetext p{
+    #lecturetext p {
         font-size: 20px;
+    }
+    .nav {
+        position: fixed;
+        top: 116px;
     }
 </style>
