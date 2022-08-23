@@ -4,7 +4,10 @@
         <div id="lecturetext">
             <h1>{{title}}</h1>
             <img :src="imgsrc" :alt="imgalt">
-            <p v-for="t in text"><span v-html="t"></span></p>
+            <p v-for="(element, key) in elements">
+                <span v-if="element.type ===  'text'" v-html="element.content"></span>
+                <Question v-if="element.type === 'question'" :question="element.content.question" :answers="element.content.answers"></Question>
+            </p>
         </div>
     </div>
 </template>
@@ -13,7 +16,7 @@
     export default {
         props: {
             title: String,
-            text: Array,
+            elements: Array,
             imgsrc: String,
             imgalt: String,
         },
