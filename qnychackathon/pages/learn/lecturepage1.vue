@@ -59,7 +59,7 @@
                             answers: {
                                 answers: ["The probability of each state", "The classical bits", "the qubit", "The number of qubits measured by each state."],
                                 correct: 0,
-                                explanation: "In ket notation, the prefix of each state, i.e. |0> or |1> is the respective probability of each state."
+                                explanation: "In ket notation, the prefix of each state, i.e. |0> or |1> represents its probability."
                             }
                         }
                     }

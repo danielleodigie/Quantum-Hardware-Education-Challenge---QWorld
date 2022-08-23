@@ -17,7 +17,7 @@
 
 <style>
     #learn{
-        margin-bottom: 110px;
+        margin-bottom: 10px;
     }
 
     .intro{

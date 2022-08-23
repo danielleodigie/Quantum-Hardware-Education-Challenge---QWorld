@@ -1,11 +1,11 @@
 <template>
-    <div class="infocard grow">
-        <img :src="imgsrc" :style="cardstyle"/>
+    <NuxtLink :to="link" class="infocard grow" :class="{modified: background || color}">
+        <img :src="imgsrc"/>
         <div>
             <h1>{{title}}</h1>
             <p>{{subtitle}}</p>
         </div>
-    </div>
+    </NuxtLink>
 </template>
 
 <style>
@@ -23,13 +23,20 @@
     justify-content: center;
     background-color: lightseagreen;
     border-radius: 20px;
-    width: 90%;
-    margin: 10px
+    width: 45%;
+    min-width: 550px;
+    margin: 10px;
+    color: black;
+}
+
+.modified{
+    background-color: v-bind(background);
+    color: v-bind(color);
 }
 
 .infocard img{
     width: 50%;
-    height: 100%;
+    height: auto;
     background-position: fixed;
     max-height: 500px;
     min-height: 300px;
@@ -39,15 +46,11 @@
 }
 .infocard div{
   margin: 0px 20px;
-  text-align: left;
+  text-align: center;
   width: 100%;
 }
 
-.infocard h1{
-    text-align: center;
-}
 .infocard p{
-    text-align: center;
     font-size: 20px;
     font-family: "DosisLight";
 }
@@ -72,9 +75,11 @@ export default{
     name: "InfoCard",
     props: {
         imgsrc: {required: true, type: String},
-        cardstyle: {required: false, type: String},
+        background: {required: false, type: String},
+        color: {required: false, type: String},
         title: {required: true, type: String},
-        subtitle: {required: true, type: String}
+        subtitle: {required: true, type: String},
+        link: {required: true, type: String}
     }
 }
 </script>

@@ -23,7 +23,7 @@
        text-align: center;
     }
 
-    #footer a, a:visited {
+    #footer a, #footer a:visited {
         transition: 200ms;
         color: white;
         padding: 8px 30px;
