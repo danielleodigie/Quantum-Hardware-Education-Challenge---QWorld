@@ -12,7 +12,7 @@
     </div>
     <br/>
     <div id="infocards">
-      <info-card v-for="(infocard, index) in infocards" v-bind:key="index" :imgsrc="infocard.imgsrc" :title="infocard.title" :subtitle="infocard.subtitle" :cardstyle="infocard.style"></info-card>
+      <info-card v-for="(infocard, index) in infocards" v-bind:key="index" :imgsrc="infocard.imgsrc" :title="infocard.title" :subtitle="infocard.subtitle" :cardstyle="infocard.style" :link="infocard.link" :background="infocard.background" :color="infocard.color"></info-card>
     </div>
   </div>
 </template>
@@ -23,7 +23,7 @@
   }
   #main {
     /* margin: 0px 50px; */
-    margin-bottom: 110px;
+    margin-bottom: 10px;
   }
   #infocards {
     display: flex;
@@ -68,7 +68,6 @@
     font-size: 30px;
     font-family: "DosisLight";
     top: 116px;
-    /* background-color: antiquewhite; */
     padding: 20px 10%;
     margin: 0;
     line-height: 50px;
@@ -96,25 +95,28 @@
           color: "white"
         }, {
           title: "We put the U in Quantum!",
-          subtitle: "And have some fun while you're doing it.",
+          subtitle: "Building a welcoming community where everyone can learn.",
           background: "antiquewhite",
           color: "black"
         }, {
-          title: "Learn about super-conducting qubits!",
-          subtitle: "And have some fun while you're doing it.",
+          title: "Quantum Computing for the minds of today!",
+          subtitle: "Start your journey into quantum computing with us.",
           background: "lightgreen",
           color: "white"
         }, ],
         infocards: [{
             imgsrc: "https://www.sciencealert.com/images/2019-06/processed/superconductivity_topic_1024.jpg",
-            title: "Hello World!",
-            subtitle: "How's it going?"
+            title: "Want to start learning about super-conducting qubits?",
+            subtitle: "Start your quantum journey here!",
+            link: "/learn",
           },
           {
             imgsrc: "https://www.engineering.columbia.edu/files/seas/styles/816x460/public/content/cs_image/2021/48/quantum-computers_hero.jpg?itok=ieDDyPcg",
-            title: "Welcome to Qubit world",
-            subtitle: "We're goin' quantum!",
-            style: "background-color: lightpink"
+            title: "Learn about our mission",
+            subtitle: "Click here to read more about ",
+            background: "lightpink",
+            color: "white",
+            link: "/about"
           },
         ],
       }
