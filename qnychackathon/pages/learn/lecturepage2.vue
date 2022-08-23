@@ -1,6 +1,13 @@
 <template>
+    <div>
     <LecturePage title="Energy Quantization" :elements="elements">
     </LecturePage>
+    <div class="video">
+            <p style="font-size:30px">Here's a video to explain some quantum mechanics basics to understand this better!</p>
+      <iframe width="70%" height="450px" src="https://www.youtube.com/embed/xMteuXSs3Ko?color=white&autoplay=0&controls=0&disablekb=1&fs=0&modestbranding=1&rel=0&cc_load_policy=1" title="Quantum Mechanics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    </div>
 </template>
 
 <script>
