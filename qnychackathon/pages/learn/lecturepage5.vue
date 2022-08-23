@@ -12,6 +12,13 @@
                         content: "A Josephson junction is composed of a thin layer of insulating material sandwiched between two layers of superconductor.  Normally, no current can pass through an insulator because electrons in insulators are not free to move through the conductance band.  However, the quantum mechanical nature of the Cooper pairs in a superconducting material allows them to occasionally “tunnel” through the insulating material to the other side."
                     },
                     {
+                        type: "img",
+                        content: {
+                            src: "../images/Josephson_Junctions.png",
+                            alt: "Josephson Junction diagram",
+                        }
+                    },
+                    {
                         type: "question",
                         content: {
                             question: "What is the insulating material layout of a Josephson junction?",

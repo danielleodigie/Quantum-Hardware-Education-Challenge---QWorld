@@ -3,10 +3,10 @@
         <ModuleNav class="nav"></ModuleNav>
         <div id="lecturetext">
             <h1>{{title}}</h1>
-            <img :src="imgsrc" :alt="imgalt">
             <p v-for="(element, key) in elements">
                 <span v-if="element.type ===  'text'" v-html="element.content"></span>
                 <Question v-if="element.type === 'question'" :question="element.content.question" :answers="element.content.answers"></Question>
+                <img v-if="element.type ==='img'" :src="element.content.src" :alt="element.content.alt" :style="element.content.imgstyle" />
             </p>
         </div>
     </div>
@@ -16,9 +16,7 @@
     export default {
         props: {
             title: String,
-            elements: Array,
-            imgsrc: String,
-            imgalt: String,
+            elements: Array
         },
     }
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <LecturePage title="Energy Quantization" :elements="elements" imgsrc="../images/qubit.png" imgalt="qubit">
+    <LecturePage title="Energy Quantization" :elements="elements">
     </LecturePage>
 </template>
 
@@ -11,6 +11,12 @@
                         type: "text",
                         content: "When a classical bit is measured, it returns a value of either 0 or 1, and nothing in between.  A similar phenomenon occurs in quantum systems.  When measuring the energy of a ball rolling down a hill, one could expect to get any number of values for the energy of that ball, ranging from 0, if the ball is still, to increasingly large numbers if the ball is moving faster.  However, the same is not true in quantum systems.  The measurement of the energy of an electron can only yield discrete values, rather than a continuous range of values."
                     },
+                    { 
+                        type: "img",
+                        content: {
+                            src: "../images/Energy_Quantization.png",
+                            alt: "energy levels"
+                        }},
                     {
                         type: "question",
                         content: {

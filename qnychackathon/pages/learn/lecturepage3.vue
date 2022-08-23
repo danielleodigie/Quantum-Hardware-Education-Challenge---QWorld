@@ -12,6 +12,13 @@
                         content: "Different materials are often classified by their conductivity, a measure of how easily electrons can pass through a material when subjected to an electric field. Conductors are materials that require only a small amount of energy for an electron to be stripped from its atom, in what is known as the valence band, and flow freely through the material, in what is known as the conductance band."
                     },
                     {
+                        type: "img",
+                        content: {
+                            src: "../images/Electrons.png",
+                            alt: "electron model"
+                        }
+                    },
+                    {
                         type: "text",
                         content: "In most conductors, electrons in the conductance bands experience a certain amount of “friction”, which provides some resistance to the flow of current and keeps the material from being infinitely conductive.  However, at sufficiently low temperatures, some materials become infinitely conductive superconductors, where the electrons exhibit no resistance to their flow.  This occurs because electrons exhibit a weak attraction to one another that bind them together in Cooper Pairs, which do not experience resistance when flowing through a material, unlike unpaired electrons."
                     },
@@ -24,6 +31,14 @@
                                 correct: 3,
                                 explanation: "Some pairs of electrons show a very small attraction to each other at lower temperatures, this phenomenon is what we call Cooper Pairs. These pairs do not experience resistance when flowing through a material."
                             }
+                        }
+                    },
+                    {
+                        type: "img",
+                        content: {
+                            src: "../images/Cooper_Pair.png",
+                            alt: "cooper pairs model",
+                            imgstyle: "transform:rotate(90deg);"
                         }
                     },
                     {
