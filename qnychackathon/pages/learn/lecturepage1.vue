@@ -2,23 +2,24 @@
     <div>
         <LecturePage title="Classical and Quantum Bits" :elements="elements">
         </LecturePage>
+        <WorksCited :citations="citations"></WorksCited>
     </div>
 </template>
 
 <script>
-
+    import WorksCited from '../../components/WorksCited.vue';
 </script>
 <script>
     export default {
         data() {
             return {
-                elements: [
-                    {type: "img",
-                    content: {
-                        src: "../images/Classical_Computer_.png"
-                    }
-                },
-                {
+                elements: [{
+                        type: "img",
+                        content: {
+                            src: "../images/Classical_Computer_.png"
+                        }
+                    },
+                    {
                         type: "text",
                         content: "Qubits are the fundamental building blocks of quantum computers.  To understand qubits and how superconductivity allows us to develop qubits that are useful for computation, we first need to understand the classical bit, which is what makes up the normal computers we use every day.  A bit is the smallest unit of information stored in a computer, and it takes on the value of either 0 or 1.   Usually, 1 is represented by flowing current through a junction, while a 0 is represented by no current flowing through a junction.  A computer uses millions of these bits, each storing a value of either 0 or 1, to encode extremely complex information.  It also performs operations on these bits, thus changing their values and the output provided by the computer."
                     },
@@ -62,6 +63,12 @@
                                 explanation: "In ket notation, the prefix of each state, i.e. |0> or |1> represents its probability."
                             }
                         }
+                    }
+                ],
+                citations: [
+                    {
+                        name: "Superconducting quantum bits – Physics World",
+                        link: "https://physicsworld.com/a/superconducting-quantum-bits/"
                     }
                 ]
             }
