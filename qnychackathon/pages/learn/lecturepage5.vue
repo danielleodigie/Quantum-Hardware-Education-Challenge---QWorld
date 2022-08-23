@@ -14,7 +14,7 @@
                     {
                         type: "img",
                         content: {
-                            src: "images/Josephson_Junctions.png",
+                            src: "../images/Josephson_Junctions.png",
                             alt: "Josephson Junction diagram",
                         }
                     },
