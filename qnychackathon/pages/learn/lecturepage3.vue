@@ -1,6 +1,9 @@
 <template>
-    <LecturePage title="Superconductors" :elements="elements" imgsrc="../images/qubit.png" imgalt="qubit">
-    </LecturePage>
+    <div>
+        <LecturePage title="Superconductors" :elements="elements" imgsrc="../images/qubit.png" imgalt="qubit">
+        </LecturePage>
+        <WorksCited :citations="citations"></WorksCited>
+    </div>
 </template>
 
 <script>
@@ -56,6 +59,33 @@
                             }
                         }
                     },
+                ],
+                citations: [
+                    {
+                        name: "Superconducting quantum bits – Physics World",
+                        link: "https://physicsworld.com/a/superconducting-quantum-bits/"
+                    },
+                    {
+                        name: "Building a quantum computer with superconducting qubits (QuantumCasts)",
+                        link: "https://youtu.be/uPw9nkJAwDY"
+                    },
+                    {
+                        name: "Quantum computing with superconducting qubits — PennyLane",
+                        link: "https://pennylane.ai/qml/demos/tutorial_sc_qubits.html"
+                    },
+                    {
+                        name: "Superconducting quantum bits | Nature",
+                        link: "https://www.nature.com/articles/nature07128"
+                    },
+                    {
+                        name: "A Brief History of Superconducting Quantum Computing | Steven Girvin",
+                        link: "https://www.youtube.com/watch?v=xjlGL4Mvq7A&t=288s"
+                    },
+                    {
+                        name: "Qiskit: 16. Superconducting Qubits I: Quantizing a Harmonic Oscillator, Josephson Junctions - Part 1",
+                        link: "https://www.youtube.com/watch?v=eZJjQGu85Ps"
+                    },
+
                 ]
             }
         }

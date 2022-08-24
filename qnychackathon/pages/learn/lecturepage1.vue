@@ -4,16 +4,13 @@
         </LecturePage>
         <div class="video">
             <p style="font-size:30px">Here's a little video to sum things up!</p>
-      <iframe width="70%" height="450px" src="https://www.youtube.com/embed/CskYZrkkWMs?color=white&autoplay=0&controls=0&disablekb=1&fs=0&modestbranding=1&rel=0&cc_load_policy=1" title="Classical vs Quantum" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      <iframe width="70%" height="450px" src="https://www.youtube.com/embed/CskYZrkkWMs?color=white&autoplay=0&fs=0&modestbranding=1&rel=0&cc_load_policy=1" title="Classical vs Quantum" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
         <WorksCited :citations="citations"></WorksCited>
     </div>
     </div>
 </template>
 
-<script>
-    import WorksCited from '../../components/WorksCited.vue';
-</script>
 <script>
     export default {
         data() {
@@ -74,7 +71,28 @@
                     {
                         name: "Superconducting quantum bits – Physics World",
                         link: "https://physicsworld.com/a/superconducting-quantum-bits/"
-                    }
+                    },
+                    {
+                        name: "Building a quantum computer with superconducting qubits (QuantumCasts)",
+                        link: "https://youtu.be/uPw9nkJAwDY"
+                    },
+                    {
+                        name: "Quantum computing with superconducting qubits — PennyLane",
+                        link: "https://pennylane.ai/qml/demos/tutorial_sc_qubits.html"
+                    },
+                    {
+                        name: "Superconducting quantum bits | Nature",
+                        link: "https://www.nature.com/articles/nature07128"
+                    },
+                    {
+                        name: "A Brief History of Superconducting Quantum Computing | Steven Girvin",
+                        link: "https://www.youtube.com/watch?v=xjlGL4Mvq7A&t=288s"
+                    },
+                    {
+                        name: "Qiskit: 16. Superconducting Qubits I: Quantizing a Harmonic Oscillator, Josephson Junctions - Part 1",
+                        link: "https://www.youtube.com/watch?v=eZJjQGu85Ps"
+                    },
+
                 ]
             }
         }
