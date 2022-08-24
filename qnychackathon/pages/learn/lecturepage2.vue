@@ -1,12 +1,13 @@
 <template>
     <div>
-    <LecturePage title="Energy Quantization" :elements="elements">
-    </LecturePage>
-    <div class="video">
+        <LecturePage title="Energy Quantization" :elements="elements">
+        </LecturePage>
+        <div class="video">
             <p style="font-size:30px">Here's a video to explain some quantum mechanics basics to understand this better!</p>
-      <iframe width="70%" height="450px" src="https://www.youtube.com/embed/xMteuXSs3Ko?color=white&autoplay=0&controls=0&disablekb=1&fs=0&modestbranding=1&rel=0&cc_load_policy=1" title="Quantum Mechanics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </div>
+            <iframe width="70%" height="450px" src="https://www.youtube.com/embed/xMteuXSs3Ko?color=white&autoplay=0&fs=0&modestbranding=1&rel=0&cc_load_policy=1" title="Quantum Mechanics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <WorksCited :citations="citations"></WorksCited>
     </div>
 </template>
 
@@ -18,12 +19,13 @@
                         type: "text",
                         content: "When a classical bit is measured, it returns a value of either 0 or 1, and nothing in between.  A similar phenomenon occurs in quantum systems.  When measuring the energy of a ball rolling down a hill, one could expect to get any number of values for the energy of that ball, ranging from 0, if the ball is still, to increasingly large numbers if the ball is moving faster.  However, the same is not true in quantum systems.  The measurement of the energy of an electron can only yield discrete values, rather than a continuous range of values."
                     },
-                    { 
+                    {
                         type: "img",
                         content: {
                             src: "../images/Energy_Quantization.png",
                             alt: "energy levels"
-                        }},
+                        }
+                    },
                     {
                         type: "question",
                         content: {
@@ -53,6 +55,33 @@
                             }
                         }
                     },
+                ],
+                citations: [
+                    {
+                        name: "Superconducting quantum bits – Physics World",
+                        link: "https://physicsworld.com/a/superconducting-quantum-bits/"
+                    },
+                    {
+                        name: "Building a quantum computer with superconducting qubits (QuantumCasts)",
+                        link: "https://youtu.be/uPw9nkJAwDY"
+                    },
+                    {
+                        name: "Quantum computing with superconducting qubits — PennyLane",
+                        link: "https://pennylane.ai/qml/demos/tutorial_sc_qubits.html"
+                    },
+                    {
+                        name: "Superconducting quantum bits | Nature",
+                        link: "https://www.nature.com/articles/nature07128"
+                    },
+                    {
+                        name: "A Brief History of Superconducting Quantum Computing | Steven Girvin",
+                        link: "https://www.youtube.com/watch?v=xjlGL4Mvq7A&t=288s"
+                    },
+                    {
+                        name: "Qiskit: 16. Superconducting Qubits I: Quantizing a Harmonic Oscillator, Josephson Junctions - Part 1",
+                        link: "https://www.youtube.com/watch?v=eZJjQGu85Ps"
+                    },
+
                 ]
             }
         }

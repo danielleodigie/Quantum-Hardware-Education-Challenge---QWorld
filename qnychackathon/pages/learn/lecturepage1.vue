@@ -4,26 +4,24 @@
         </LecturePage>
         <div class="video">
             <p style="font-size:30px">Here's a little video to sum things up!</p>
-      <iframe width="70%" height="450px" src="https://www.youtube.com/embed/CskYZrkkWMs?color=white&autoplay=0&controls=0&disablekb=1&fs=0&modestbranding=1&rel=0&cc_load_policy=1" title="Classical vs Quantum" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      <iframe width="70%" height="450px" src="https://www.youtube.com/embed/CskYZrkkWMs?color=white&autoplay=0&fs=0&modestbranding=1&rel=0&cc_load_policy=1" title="Classical vs Quantum" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
+        <WorksCited :citations="citations"></WorksCited>
     </div>
     </div>
 </template>
 
 <script>
-
-</script>
-<script>
     export default {
         data() {
             return {
-                elements: [
-                    {type: "img",
-                    content: {
-                        src: "../images/Classical_Computer_.png"
-                    }
-                },
-                {
+                elements: [{
+                        type: "img",
+                        content: {
+                            src: "../images/Classical_Computer_.png"
+                        }
+                    },
+                    {
                         type: "text",
                         content: "Qubits are the fundamental building blocks of quantum computers.  To understand qubits and how superconductivity allows us to develop qubits that are useful for computation, we first need to understand the classical bit, which is what makes up the normal computers we use every day.  A bit is the smallest unit of information stored in a computer, and it takes on the value of either 0 or 1.   Usually, 1 is represented by flowing current through a junction, while a 0 is represented by no current flowing through a junction.  A computer uses millions of these bits, each storing a value of either 0 or 1, to encode extremely complex information.  It also performs operations on these bits, thus changing their values and the output provided by the computer."
                     },
@@ -68,6 +66,33 @@
                             }
                         }
                     }
+                ],
+                citations: [
+                    {
+                        name: "Superconducting quantum bits – Physics World",
+                        link: "https://physicsworld.com/a/superconducting-quantum-bits/"
+                    },
+                    {
+                        name: "Building a quantum computer with superconducting qubits (QuantumCasts)",
+                        link: "https://youtu.be/uPw9nkJAwDY"
+                    },
+                    {
+                        name: "Quantum computing with superconducting qubits — PennyLane",
+                        link: "https://pennylane.ai/qml/demos/tutorial_sc_qubits.html"
+                    },
+                    {
+                        name: "Superconducting quantum bits | Nature",
+                        link: "https://www.nature.com/articles/nature07128"
+                    },
+                    {
+                        name: "A Brief History of Superconducting Quantum Computing | Steven Girvin",
+                        link: "https://www.youtube.com/watch?v=xjlGL4Mvq7A&t=288s"
+                    },
+                    {
+                        name: "Qiskit: 16. Superconducting Qubits I: Quantizing a Harmonic Oscillator, Josephson Junctions - Part 1",
+                        link: "https://www.youtube.com/watch?v=eZJjQGu85Ps"
+                    },
+
                 ]
             }
         }

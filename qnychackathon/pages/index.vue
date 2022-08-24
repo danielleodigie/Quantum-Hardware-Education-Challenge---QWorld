@@ -6,7 +6,7 @@
       <p>It is our mission to spread awareness about quantum computing. We aim to introduce the field to students from all different backgrounds, age groups, and interests. The quantum decade is steadily approaching. It is important that we inspire people
         from all walks of life to pursue a career in quantum. If you are interested in learning more about quantum computing your journey begins below.</p>
     </div>
-    <div class="video">
+    <div class="video" id="mainvid">
       <iframe width="90%" height="600px" src="https://www.youtube.com/embed/aZaDQ5yc3fQ?color=white&autoplay=0&controls=0&disablekb=1&fs=0&modestbranding=1&rel=0&cc_load_policy=1" title="Home Page" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </div>
@@ -59,10 +59,12 @@
     align-items: center;
   }
   .video iframe {
-    position: sticky;
     top: 116px;
     border-radius: 20px;
     margin: 20px;
+  }
+  #mainvid{
+    position: sticky;
   }
   .blank p {
     font-size: 30px;
