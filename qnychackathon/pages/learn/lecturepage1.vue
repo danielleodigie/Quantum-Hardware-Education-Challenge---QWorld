@@ -37,6 +37,13 @@
                         }
                     },
                     {
+                        type: "img",
+                        content: {
+                            src: "../images/SUPA.png",
+                            alt: "a cute supercomputer drawing"
+                        }
+                    },
+                    {
                         type: "text",
                         content: "Qubits are similar to classical bits in that, when they are measured, they return a value of either 0 or 1.  However, unlike classical bits, they harness the power of quantum mechanics.  Quantum mechanics says that, on very small scales, objects can exist in a superposition of multiple states, rather than in one explicit state.  For example, if your computer is sitting on your desk, there is no uncertainty regarding its location.  It is on your desk, and nowhere else.  An electron, on the other hand, is small enough that quantum effects dominate.  An electron can actually exist in multiple locations at once, and rather than describing its position as a single location, you use a probability distribution which governs where that electron is most likely to be located."
                     },
