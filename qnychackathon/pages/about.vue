@@ -14,7 +14,7 @@
                 <li><p>Yelissa Lopez: Videos, Planning, Research</p></li>
                 <li><p>Keily Luna: Images, Quizzes</p></li>
                 <li><p>Raynel Sanchez: Web Development</p></li>
-                <li><p>Sophia Guizzo: Lecture Content, Reserach</p></li>
+                <li><p>Sophia Guizzo: Lecture Content, Research</p></li>
                 <li><p>Danielle Odigie: Web Development</p></li>
             </ul>
         </div>

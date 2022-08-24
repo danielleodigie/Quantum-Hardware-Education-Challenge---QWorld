@@ -81,6 +81,12 @@ export default {
                     textcolor: "white",
                     title: "Josephson Junctions",
                     link: "/learn/lecturepage5"
+                },
+                {
+                    imgsrc: "../images/CAT.png",
+                    textcolor: "white",
+                    title: "Summary",
+                    link: "/learn/lecturepage6"
                 }
             ]
         }
