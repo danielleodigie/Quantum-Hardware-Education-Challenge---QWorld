@@ -99,6 +99,10 @@
                         name: "Qiskit: 16. Superconducting Qubits I: Quantizing a Harmonic Oscillator, Josephson Junctions - Part 1",
                         link: "https://www.youtube.com/watch?v=eZJjQGu85Ps"
                     },
+                    {
+                        name: "IBM Quantum Computer Illustration by Jon Perry (@StatedClearly)",
+                        link: "https://twitter.com/statedclearly/status/1253403181155041280"
+                    }
 
                 ]
             }
