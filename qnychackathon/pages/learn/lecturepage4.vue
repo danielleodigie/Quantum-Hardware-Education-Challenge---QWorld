@@ -1,6 +1,6 @@
 <template>
     <div>
-        <LecturePage title="RC Circuits" :elements="elements" imgsrc="../images/qubit.png" imgalt="qubit">
+        <LecturePage title="LC Circuits" :elements="elements" imgsrc="../images/qubit.png" imgalt="qubit">
         </LecturePage>
         <WorksCited :citations="citations"></WorksCited>
     </div>

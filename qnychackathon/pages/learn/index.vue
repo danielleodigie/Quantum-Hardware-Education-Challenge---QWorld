@@ -73,7 +73,7 @@ export default {
                 {
                     imgsrc: "https://www.cnet.com/a/img/resize/c112746c0379c9ee5303d267c7a6ec8da7e4b9a1/2019/06/26/3f76e99d-8055-46f3-8f27-558ee276b665/20180405-ibm-q-quantum-computer-02.jpg?auto=webp&fit=crop&height=675&width=1200",
                     textcolor: "white",
-                    title: "RC-Circuits",
+                    title: "LC-Circuits",
                     link: "/learn/lecturepage4"
                 },
                 {
